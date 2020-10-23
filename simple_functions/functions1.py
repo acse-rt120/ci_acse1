@@ -1,6 +1,6 @@
 from functools import lru_cache
 
-__all__ = ['my_sum', 'factorial']
+__all__ = ['my_sum', 'factorial',"sum"]
 
 
 def my_sum(iterable):
@@ -13,3 +13,7 @@ def my_sum(iterable):
 @lru_cache(maxsize=None)  # Note: -> @cache in python >= 3.9
 def factorial(n):
     return n * factorial(n-1) if n else 1
+
+
+def sum(a,b):
+    return a+b
